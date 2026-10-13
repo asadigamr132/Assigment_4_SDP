@@ -16,7 +16,7 @@ public class OrderFacade {
         this.shippingService = new ShippingService();
     }
 
-    public void setPaymentSuccessful(Boolean status){
+    public void setPaymentSuccessful(boolean status){
         paymentProcessor.setPaymentSuccessful(status);
     }
 
@@ -67,10 +67,11 @@ public class OrderFacade {
                 else{
                     System.out.println("The order cannot be canceled, it is not placed");
                 }
-                if(!found) {
-                    System.out.println("Such ID doesn't exist");
-                }
+
                 return;
+            }
+            if(!found) {
+                System.out.println("Such ID doesn't exist");
             }
 
         }
