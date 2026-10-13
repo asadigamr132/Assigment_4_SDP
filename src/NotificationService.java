@@ -6,6 +6,6 @@ public class NotificationService {
         System.out.println("Payment declined for " + customer);
     }
     public void sendCancellation(String customer){
-        System.out.println("Order declined for " + customer);
+        System.out.println("Order cancelled for " + customer);
     }
 }
